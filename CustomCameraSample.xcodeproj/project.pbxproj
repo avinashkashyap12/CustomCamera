@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDD25B6F1D55E15A00EBB42C /* press_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B6D1D55E15A00EBB42C /* press_icon.png */; };
+		FDD25B701D55E15A00EBB42C /* press_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B6E1D55E15A00EBB42C /* press_icon@2x.png */; };
+		FDD25B771D55ED8E00EBB42C /* swapCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B751D55ED8E00EBB42C /* swapCamera.png */; };
+		FDD25B781D55ED8E00EBB42C /* swapCamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD25B761D55ED8E00EBB42C /* swapCamera@2x.png */; };
 		FDD5A7591B622B6A000C523F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5A7581B622B6A000C523F /* main.m */; };
 		FDD5A75C1B622B6A000C523F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5A75B1B622B6A000C523F /* AppDelegate.m */; };
 		FDD5A75F1B622B6A000C523F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5A75E1B622B6A000C523F /* ViewController.m */; };
@@ -14,6 +18,7 @@
 		FDD5A7641B622B6A000C523F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD5A7631B622B6A000C523F /* Images.xcassets */; };
 		FDD5A7671B622B6A000C523F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD5A7651B622B6A000C523F /* LaunchScreen.xib */; };
 		FDD5A7731B622B6A000C523F /* CustomCameraSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5A7721B622B6A000C523F /* CustomCameraSampleTests.m */; };
+		FDD5A77D1B622BA5000C523F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD5A77C1B622BA5000C523F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDD25B6D1D55E15A00EBB42C /* press_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_icon.png; sourceTree = "<group>"; };
+		FDD25B6E1D55E15A00EBB42C /* press_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_icon@2x.png"; sourceTree = "<group>"; };
+		FDD25B751D55ED8E00EBB42C /* swapCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swapCamera.png; sourceTree = "<group>"; };
+		FDD25B761D55ED8E00EBB42C /* swapCamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swapCamera@2x.png"; sourceTree = "<group>"; };
 		FDD5A7531B622B6A000C523F /* CustomCameraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCameraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD5A7571B622B6A000C523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD5A7581B622B6A000C523F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,7 @@
 		FDD5A76C1B622B6A000C523F /* CustomCameraSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCameraSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD5A7711B622B6A000C523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD5A7721B622B6A000C523F /* CustomCameraSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCameraSampleTests.m; sourceTree = "<group>"; };
+		FDD5A77C1B622BA5000C523F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD5A77D1B622BA5000C523F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +74,7 @@
 		FDD5A74A1B622B6A000C523F = {
 			isa = PBXGroup;
 			children = (
+				FDD5A77C1B622BA5000C523F /* AVFoundation.framework */,
 				FDD5A7551B622B6A000C523F /* CustomCameraSample */,
 				FDD5A76F1B622B6A000C523F /* CustomCameraSampleTests */,
 				FDD5A7541B622B6A000C523F /* Products */,
@@ -88,6 +100,10 @@
 				FDD5A7601B622B6A000C523F /* Main.storyboard */,
 				FDD5A7631B622B6A000C523F /* Images.xcassets */,
 				FDD5A7651B622B6A000C523F /* LaunchScreen.xib */,
+				FDD25B6D1D55E15A00EBB42C /* press_icon.png */,
+				FDD25B6E1D55E15A00EBB42C /* press_icon@2x.png */,
+				FDD25B751D55ED8E00EBB42C /* swapCamera.png */,
+				FDD25B761D55ED8E00EBB42C /* swapCamera@2x.png */,
 				FDD5A7561B622B6A000C523F /* Supporting Files */,
 			);
 			path = CustomCameraSample;
@@ -200,7 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD5A7621B622B6A000C523F /* Main.storyboard in Resources */,
+				FDD25B781D55ED8E00EBB42C /* swapCamera@2x.png in Resources */,
+				FDD25B701D55E15A00EBB42C /* press_icon@2x.png in Resources */,
 				FDD5A7671B622B6A000C523F /* LaunchScreen.xib in Resources */,
+				FDD25B771D55ED8E00EBB42C /* swapCamera.png in Resources */,
+				FDD25B6F1D55E15A00EBB42C /* press_icon.png in Resources */,
 				FDD5A7641B622B6A000C523F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +438,7 @@
 				FDD5A7781B622B6A000C523F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDD5A7791B622B6A000C523F /* Build configuration list for PBXNativeTarget "CustomCameraSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +447,7 @@
 				FDD5A77B1B622B6A000C523F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

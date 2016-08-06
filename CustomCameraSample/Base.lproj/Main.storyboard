@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCd-Ud-C0E">
+                                <rect key="frame" x="0.0" y="20" width="600" height="560"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f15-XJ-u94">
+                                        <rect key="frame" x="535" y="20" width="45" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="5qC-nB-LLW"/>
+                                            <constraint firstAttribute="width" constant="45" id="kU4-5S-a2Y"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="swapCamera.png"/>
+                                        <connections>
+                                            <action selector="changeCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLz-BW-rDy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="f15-XJ-u94" firstAttribute="top" secondItem="mCd-Ud-C0E" secondAttribute="top" constant="20" id="R82-Qx-7rh"/>
+                                    <constraint firstAttribute="trailing" secondItem="f15-XJ-u94" secondAttribute="trailing" constant="20" id="x5R-XI-PT5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvu-xq-kKI">
+                                <rect key="frame" x="260" y="500" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Zmf-SA-1dO"/>
+                                    <constraint firstAttribute="height" constant="80" id="oeO-Up-avz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="press_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHE-vJ-PkM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mCd-Ud-C0E" secondAttribute="bottom" constant="20" id="CBZ-Ir-4fh"/>
+                            <constraint firstItem="xvu-xq-kKI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAa-O3-2h9"/>
+                            <constraint firstItem="mCd-Ud-C0E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V7M-We-XHJ"/>
+                            <constraint firstItem="mCd-Ud-C0E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kcu-Nv-JuV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xvu-xq-kKI" secondAttribute="bottom" constant="20" id="s45-oh-3KV"/>
+                            <constraint firstItem="xvu-xq-kKI" firstAttribute="top" secondItem="mCd-Ud-C0E" secondAttribute="bottom" id="xVF-cZ-Fwc"/>
+                            <constraint firstAttribute="trailing" secondItem="mCd-Ud-C0E" secondAttribute="trailing" id="ymT-k9-ThI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xVF-cZ-Fwc"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="PreviewView" destination="mCd-Ud-C0E" id="7DQ-td-T6p"/>
+                        <outlet property="captureButton" destination="xvu-xq-kKI" id="aLJ-KC-QMF"/>
+                        <outlet property="swapButton" destination="f15-XJ-u94" id="O5i-NX-xDS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="press_icon.png" width="80" height="80"/>
+        <image name="swapCamera.png" width="45" height="34"/>
+    </resources>
 </document>
